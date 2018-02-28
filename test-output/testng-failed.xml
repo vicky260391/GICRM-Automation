@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test name="ChromeTest(failed)">
+    <parameter name="inputFile" value="gicrmInputs.properties"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="http://54.208.211.30:8080/app/index.php/zurmo/default/login"/>
+    <classes>
+      <class name="com.gicrm.selenium.GicrmMainUAT">
+        <methods>
+          <include name="opptCreation"/>
+          <include name="init"/>
+          <include name="oppt_type"/>
+        </methods>
+      </class> <!-- com.gicrm.selenium.GicrmMainUAT -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
